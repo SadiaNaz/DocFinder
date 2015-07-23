@@ -48,7 +48,7 @@ angular.module("DoctorFind",['ui.router'])
 					$scope.user = {}; // form fields are emptied with this line
 					
 					window.localStorage['Doctors'] = JSON.stringify($scope.doctors);
-					window.location.href = 'http://localhost/MyDocFinder/search.html';
+					window.location.href = 'http://localhost:1337/MyDocFinder1/MyDocFinder22/search.html';
 				 });
 				}
 				
@@ -64,7 +64,7 @@ angular.module("DoctorFind",['ui.router'])
 					$scope.user = {}; // form fields are emptied with this line
 					
 					window.localStorage['Doctors'] = JSON.stringify($scope.doctors);
-					window.location.href = 'http://localhost/MyDocFinder/search.html';
+					window.location.href = 'http://localhost:1337/MyDocFinder1/MyDocFinder22/search.html';
 				 });
 					
 				}
@@ -82,7 +82,7 @@ angular.module("DoctorFind",['ui.router'])
 					$scope.user = {}; // form fields are emptied with this line
 					
 					window.localStorage['Doctors'] = JSON.stringify($scope.doctors);
-					window.location.href = 'http://localhost/MyDocFinder/search.html';
+					window.location.href = 'http://localhost:1337/MyDocFinder1/MyDocFinder22/search.html';
 				 });
 					
 				}
@@ -140,7 +140,7 @@ angular.module("DocDisp",['ui.router'])
 			$scope.getDoctor = function(name){
 				
 					window.localStorage['Name'] = JSON.stringify(name);
-					window.location.href = 'http://localhost/MyDocFinder/pro.html';
+					window.location.href = 'http://localhost:1337/MyDocFinder1/MyDocFinder22/pro.html';
 				
 				  
 				};

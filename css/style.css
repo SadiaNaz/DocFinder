@@ -28,16 +28,22 @@ body{
 .wrap{
 	width:70%;
 	margin:0 auto;
+	
 }
 .header{
 	background:url(../images/header-bg.png);
+
 }
 .logo{
 	float:left;
-	margin-top: 14px;
+	margin-top: 8px;
 }
 .top-nav{
 	float:right;
+	margin-right:-6%;
+
+	
+	
 }
 .top-nav ul li{
 	display:inline-block;
@@ -52,7 +58,7 @@ body{
 	background:#3391E7;
 	color: #fff;
 	text-transform: uppercase;
-	padding: 30px;
+	padding: 25px;
 	display: block;
 }
 .top-nav ul li a:hover{
@@ -66,6 +72,7 @@ body{
 .content-grids{
 	background:#3391E7;
 	padding: 10px 0px;
+	margin-bottom: 3%;
 }
 /*  GRID OF THREE   ============================================================================= */
 .section {
@@ -339,7 +346,11 @@ body{
 /*----footer-----*/
 .footer{
 	background:#e0e7eb;
-	padding: 15px 4px;
+	padding: 7px 4px;
+	bottom:0;
+	left:0;
+	right:0;
+	position: fixed;
 }
 .footer-left{
 	float:left;
@@ -386,6 +397,7 @@ body{
 	clear: both;
 	padding: 0px;
 	margin: 0px;
+
 }
 .group:before,
 .group:after {

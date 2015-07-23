@@ -1,9 +1,11 @@
 <div class="image-slider">
 						<!-- Slideshow 1 -->
 
+						
+	
 						<div class="datagrid"><table>
-						<thead><tr><th style ="width: 15%">Doctor Name</th><th>Doctor Name</th><th>Gender</th><th>Type</th><th>Hospital</th></tr></thead>
-
+						<thead ng-show="Doctors.length" ><tr><th style ="width: 15%">Doctor Name</th><th>Doctor Name</th><th>Gender</th><th>Type</th><th>Hospital</th></tr></thead>
+	
 						<tbody ng-repeat="doctor in Doctors track by $index" style="margin-left=10%; margin-right=10%;">
 							<tr>
 							<td style ="width: 15%"><img src={{doctor.photoUrl}} style="width:5em;height:5em;" /></td>
@@ -13,9 +15,19 @@
 							<td>{{doctor.type}}</td>
 							<td>{{doctor.location}}</td>
 					
+					
+					
 							</tr>
 						</tbody>
-						</table></div>
+						</table>
+						
+						<table>
+						
+						<tbody style="margin-left=10%; margin-right=10%;"><tr ng-show= "!Doctors.length" style="width:5em;height:5em;"><td>No Results Found</td></tr></tbody>
+						</table>
+						
+						
+						</div>
 
 
 
