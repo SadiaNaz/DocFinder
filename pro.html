@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html ng-app="DocProf">
+
+
+<head>
+ 
+ <title>Doctor Profile</title>
+  
+
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  
+	<script src="angular-1.2.20.min.js"></script>
+	<script src="angular-router-ui.min.js"></script>
+	<script src="app.js"></script>
+  
+</head>
+
+<body>
+  
+  			<div class="header">
+				<div class="wrap">
+				<!--start-logo-->
+				<div class="logo">
+					<a href="index.html"><img src="images/MainLogo.png" title="logo" /></a>
+				</div>
+				<!--end-logo-->
+				<!--start-top-nav-->
+				<div class="top-nav">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">services</a></li>
+						<li><a href="blog.html">blog</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>					
+				</div>
+				<div class="clear"> </div>
+				<!--end-top-nav-->
+			</div>
+			<!--end-header-->
+		</div>
+
+  
+  
+  
+  
+ <div id="w">
+   
+
+ <div id="content" class="clearfix">
+   
+ 
+
+ <div>
+	<ui-view></ui-view>
+</div>
+
+</div><!-- @end #content -->
+  </div><!-- @end #w -->
+		   <div class="footer" style="margin-top:3.5%;">
+		   	 <div class="wrap">
+		   	<div class="footer-left">
+		   			<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">services</a></li>
+						<li><a href="blog.html">blog</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+		   	</div>
+		   	<div class="footer-right">
+		   		<p>DocKnock</p>
+		   	</div>
+		   	<div class="clear"> </div>
+		   </div>
+		   </div>
+ </body>
+</html>

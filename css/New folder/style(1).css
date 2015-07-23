@@ -25,6 +25,7 @@ img{max-width:100%;}
 body{
 	background:#F8FBFB;
 }
+
 .wrap{
 	width:70%;
 	margin:0 auto;
@@ -340,6 +341,10 @@ body{
 .footer{
 	background:#e0e7eb;
 	padding: 15px 4px;
+	position:fixed;	
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 .footer-left{
 	float:left;
@@ -998,6 +1003,7 @@ body{
 	.top-nav{
 		float:none;
 	}
+	
 	.footer-left,.footer-right{
 		float:none;
 		text-align:center;

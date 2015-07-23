@@ -1,0 +1,221 @@
+<!-- Popup Forms -->
+	
+	<div class="popup" id="loginmodal2" style="display:none;">
+   
+   <h1>Search By Timings</h1>
+		
+	<form id="loginform" name="loginform" class="css-form" novalidate  >
+	 
+	
+	<label for="username">Select Speciality</label>
+		  
+	<select name="s_type" ng-model="user.docType" class="txtfield" ng-init="user.docType='All'" tabindex="1">
+									<option value="All" selected="selected">All</option>
+									<option value="Allergist">Allergist</option>
+									<option value="Anesthesiologist">Anesthesiologist</option>
+									<option value="Cardiologist">Cardiologist</option>
+									<option value="Dentist">Dentist</option>
+									<option value="Dermatologist">Dermatologist</option>
+									<option value="ENT Specialist">ENT Specialist</option>
+									<option value="Epidemiologist">Epidemiologist</option>
+									<option value="Gynecologist">Gynecologist</option>
+									<option value="Microbiologist">Microbiologist</option>
+									<option value="Neurologist">Neurologist</option>
+									<option value="Neurosurgeon">Neurosurgeon</option>
+									<option value="Oncologist">Oncologist</option>
+									<option value="Orthopedics">Orthopedics</option>
+									<option value="Physiologist">Physiologist</option>
+									<option value="Psychiatrist">Psychiatrist</option>
+									<option value="Radiologist">Radiologist</option>
+									<option value="Urologist">Urologist</option>
+									</select>    
+	
+	
+	
+	
+	
+		  
+	<label >Select Time Period</label>
+		  
+				 <input type="time" ng-model="user.time1" class="txtfield" style="width:30%;" name="Starttime"> 
+	<label >to</label>
+	 
+	<input type="time" style="width:30%" ng-model="user.time2" class="txtfield" name="Endtime"> 
+	
+	
+	
+	
+	   
+		  
+	<div class="center"><input type="submit" ng-click="getDoctors(user)" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Search" tabindex="3">
+	</div>
+		
+	</form>
+	 
+	</div>
+	
+	<div  class="popup" id="loginmodal1" style="display:none;">
+		
+	<h1>Search By Speciality</h1>
+		
+	<form id="loginform" name="loginform" class="css-form" novalidate>
+		  
+	
+	<label for="username">Select Speciality</label>
+		  
+	<select name="s_type" ng-model="user.docType" class="txtfield" ng-init="user.docType='All'" tabindex="1">
+									<option value="All" selected="selected">All</option>
+									<option value="Allergist">Allergist</option>
+									<option value="Anesthesiologist">Anesthesiologist</option>
+									<option value="Cardiologist">Cardiologist</option>
+									<option value="Dentist">Dentist</option>
+									<option value="Dermatologist">Dermatologist</option>
+									<option value="ENT Specialist">ENT Specialist</option>
+									<option value="Epidemiologist">Epidemiologist</option>
+									<option value="Gynecologist">Gynecologist</option>
+									<option value="Microbiologist">Microbiologist</option>
+									<option value="Neurologist">Neurologist</option>
+									<option value="Neurosurgeon">Neurosurgeon</option>
+									<option value="Oncologist">Oncologist</option>
+									<option value="Orthopedics">Orthopedics</option>
+									<option value="Physiologist">Physiologist</option>
+									<option value="Psychiatrist">Psychiatrist</option>
+									<option value="Radiologist">Radiologist</option>
+									<option value="Urologist">Urologist</option>
+									</select>    
+	
+	
+	
+	
+	
+	
+		  
+	<label >Gender: </label>
+    <input type="radio" ng-init="user.gender='Both'" name="gender" ng-model="user.gender" value="male" />Male
+    <input type="radio" name="gender" ng-model="user.gender" value="female" />Female
+	
+	
+	
+	  
+		  
+	<div class="center"><input type="submit" ng-click="getDoctors(user)" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Search" tabindex="3">
+	</div>
+	  
+	</form>
+	 
+	</div>
+	
+
+	
+	<div class="popup" id="loginmodal" style="display:none;">
+		
+	<h1>Search By Doctor</h1>
+	
+	<form id="loginform" name="loginform" ng-model="user.form" ng-init="user.form='1'" class="css-form" novalidate>
+		
+	<label >Enter Hospital</label>
+	  <input type="text" name="s_hname"  ng-model="user.hName" class="txtfield" ng-init="user.hName='Shifa International Hospital Islamabad'" readonly />
+	
+	<label>Enter Name</label>
+	<input type="text" ng-model="user.name" class="txtfield" ng-init="user.name='NA'" name="uName" required="" ng-class="{'error' : errorName}"/>
+    <div ng-show="form.$submitted || form.uName.$touched">
+    </div>
+		 
+	<label for="username">Select Speciality</label>
+		  
+	<select name="s_type"  ng-model="user.docType" ng-init="user.docType='All'" class="txtfield" tabindex="1">
+									<option value="All" selected="selected">All</option>
+									<option value="Allergist">Allergist</option>
+									<option value="Anesthesiologist">Anesthesiologist</option>
+									<option value="Cardiologist">Cardiologist</option>
+									<option value="Dentist">Dentist</option>
+									<option value="Dermatologist">Dermatologist</option>
+									<option value="ENT Specialist">ENT Specialist</option>
+									<option value="Epidemiologist">Epidemiologist</option>
+									<option value="Gynecologist">Gynecologist</option>
+									<option value="Microbiologist">Microbiologist</option>
+									<option value="Neurologist">Neurologist</option>
+									<option value="Neurosurgeon">Neurosurgeon</option>
+									<option value="Oncologist">Oncologist</option>
+									<option value="Orthopedics">Orthopedics</option>
+									<option value="Physiologist">Physiologist</option>
+									<option value="Psychiatrist">Psychiatrist</option>
+									<option value="Radiologist">Radiologist</option>
+									<option value="Urologist">Urologist</option>
+									</select>    
+	
+	
+	
+	
+	
+		  
+	<label >Gender: </label>
+    <input type="radio" ng-init="user.gender='Both'" name="gender" ng-model="user.gender" value="M" />Male
+    <input type="radio" name="gender" ng-model="user.gender" value="F" />Female
+	
+	
+	
+	
+	   
+		  
+	<div class="center"><input type="submit" ng-click="getDoctors(user)" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Search" tabindex="3">
+	</div>
+		
+	</form>
+	 
+	</div>
+	
+	
+	<!-- End Popup Forms -->
+
+<!-- 
+
+
+<form name="form" class="css-form" novalidate  >
+    Name:
+    <input type="text" ng-model="user.name" name="uName" required="" ng-class="{'error' : errorName}"/>
+    <br />
+    <div ng-show="form.$submitted || form.uName.$touched">
+    </div>
+
+    E-mail:
+    <input type="email" ng-model="user.email" name="uEmail" required="" ng-class="{'error' : errorEmail}"/>
+    <br />
+    <div ng-show="form.$submitted || form.uEmail.$touched">
+      <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+    </div>
+
+    Gender:
+    <input type="radio" name="gender" ng-model="user.gender" value="male" />male
+    <input type="radio" name="gender" ng-model="user.gender" value="female" />female
+    <br />
+	Type of Doc:
+	<select name="type"  ng-model="user.docType" tabindex="1">
+									<option value="All" selected="selected"> </option>
+									<option value="Allergist">Allergist</option>
+									<option value="Anesthesiologist">Anesthesiologist</option>
+									<option value="Cardiologist">Cardiologist</option>
+									<option value="Dentist">Dentist</option>
+									<option value="Dermatologist">Dermatologist</option>
+									<option value="ENT Specialist">ENT Specialist</option>
+									<option value="Epidemiologist">Epidemiologist</option>
+									<option value="Gynecologist">Gynecologist</option>
+									<option value="Microbiologist">Microbiologist</option>
+									<option value="Neurologist">Neurologist</option>
+									<option value="Neurosurgeon">Neurosurgeon</option>
+									<option value="Oncologist">Oncologist</option>
+									<option value="Orthopedics">Orthopedics</option>
+									<option value="Physiologist">Physiologist</option>
+									<option value="Psychiatrist">Psychiatrist</option>
+									<option value="Radiologist">Radiologist</option>
+									<option value="Urologist">Urologist</option>
+									</select>  
+	<br />
+	
+    <input type="submit" value="Save" ng-click="getDoctors(user)" />
+  </form>
+  
+  
+  <div ng-repeat="doctor in doctors track by $index">
+   {{doctors[$index].Contact}}
+  </div> -->

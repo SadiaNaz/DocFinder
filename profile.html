@@ -1,0 +1,111 @@
+
+<!DOCTYPE HTML>
+<html ng-app="DocDisp">
+	<head >
+		<title>DocKnock</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+	
+		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/responsiveslides.css">
+		<link rel="stylesheet" href="css/PopupStyle.css">
+		<link rel="stylesheet" href="css/style1.css">
+		
+		
+		<script src="angular-1.2.20.min.js"></script>
+		<script src="angular-router-ui.min.js"></script>
+		<script src="app.js"></script>
+		
+		  
+		
+	</head>
+
+
+	<body>
+		<!--start-wrap-->
+		
+			<!--start-header-->
+			<div class="header">
+				<div class="wrap">
+				<!--start-logo-->
+				<div class="logo">
+					<a href="index.html"><img src="images/MainLogo.png" title="logo" /></a>
+				</div>
+				<!--end-logo-->
+				<!--start-top-nav-->
+				<div class="top-nav">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">services</a></li>
+						<li><a href="blog.html">blog</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>					
+				</div>
+				<div class="clear"> </div>
+				<!--end-top-nav-->
+			</div>
+			<!--end-header-->
+		</div>
+		<div class="clear"> </div>
+			<!--start-image-slider---->
+					<div>
+						<div class="image-slider">
+						<!-- Slideshow 1 -->
+
+						<div class="datagrid"><table>
+						<thead><tr><th style ="width: 15%">Doctor Name</th><th>Doctor Name</th><th>Gender</th><th>Type</th><th>Hospital</th></tr></thead>
+
+						<tbody>
+							<tr>
+							<td style ="width: 15%"><img src={{doctor.photoUrl}} style="width:5em;height:5em;" /></td>
+							
+							<td><input style="background: none; border: none; cursor: pointer; color: blue;" type="submit" ng-click="getDoctors(user,{{name}})"  value={{name}} ></td>
+							<td>{{name}}</td>
+							<td>{{name}}</td>
+							<td>{{name}}</td>
+							</tr>
+						</tbody>
+						</table></div>
+
+
+
+
+
+
+						 <!-- Slideshow 2 -->
+					</div>
+					</div>
+					<!--End-image-slider---->
+		    <div class="clear"> </div>
+		    <div class="content-grids">
+		    	<div class="wrap">
+		    	<div class="section group">
+				
+				
+		    </div>
+		   </div>
+		   <div class="clear"> </div>
+		   <div class="footer">
+		   	 <div class="wrap">
+		   	<div class="footer-left">
+		   			<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">services</a></li>
+						<li><a href="blog.html">blog</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+		   	</div>
+		   	<div class="footer-right">
+		   		<p>DocKnock</p>
+		   	</div>
+		   	<div class="clear"> </div>
+		   </div>
+		   </div>
+		<!--end-wrap-->
+
+
+	</body>
+	
+</html>
+
